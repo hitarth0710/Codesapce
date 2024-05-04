@@ -1,0 +1,1 @@
+There are several ways to run a program, depending on the programming language and the environment you are using. Here are some common methods:
