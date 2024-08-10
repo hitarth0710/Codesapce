@@ -8,8 +8,8 @@ public class HalfAdder {
 	}
 
 	public static void main(String[] args) {
-		int a = 0; // First input
-		int b = 1; // Second input
+		int a = 0001; // First input
+		int b = 1000; // Second input
 
 		int[] result = halfAdd(a, b);
 		System.out.println("Sum: " + result[0]);
