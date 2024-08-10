@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class memory {
-    private static final int SIZE = 100000;
+    private static final int SIZE = 100000000;
 
     public static void main(String[] args) {
         Random rand = new Random();
