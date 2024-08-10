@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 100000
+#define SIZE 1000000000
 
 int compare(const void * a, const void * b) {
    return ( *(int*)a - *(int*)b );
@@ -24,7 +24,7 @@ int main() {
 
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-    printf("Time taken to sort 100 elements: %f\n", cpu_time_used);
+    printf("Time taken to sort elements: %f\n", cpu_time_used);
     free(arr);
     return 0;
 }

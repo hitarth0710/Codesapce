@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HalfAdder",
+            "request": "launch",
+            "mainClass": "HalfAdder",
+            "projectName": "Codesapce_da056e35"
+        },
+        {
+            "type": "java",
             "name": "AudioClient",
             "request": "launch",
             "mainClass": "AudioClient",
