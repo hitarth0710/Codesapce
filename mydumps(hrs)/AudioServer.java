@@ -4,7 +4,7 @@ import java.io.*;
 public class AudioServer {
     public static void main(String[] args) throws IOException {
         // Create a new DatagramSocket
-        DatagramSocket socket = new DatagramSocket(1234);
+        try (DatagramSocket socket = new DatagramSocket(1234)) {
 
         // Set up the audio file to be sent
         FileInputStream audioFileStream = new FileInputStream("harvard.wav");
@@ -22,9 +22,9 @@ public class AudioServer {
             System.out.println("Received: " + requestMessage);
 
             // Send the audio file contents back to the client
-            DatagramPacket responsePacket = new DatagramPacket(audioData, bytesRead, packet.getAddress(),
-packet.getPort());
+            DatagramPacket responsePacket = new DatagramPacket(audioData, bytesRead, packet.getAddress(), packet.getPort());
             socket.send(responsePacket);
         }
+    }
     }
 }
