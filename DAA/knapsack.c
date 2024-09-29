@@ -66,6 +66,6 @@ int main()
 
     }
     double maxval = knapsack(items, n, w);
-    printf("The maximum value generated in Knapsack is %.2f",maxval);
+    printf("The maximum value generated in Knapsack is %.2f\n",maxval);
     return 0;
 }
