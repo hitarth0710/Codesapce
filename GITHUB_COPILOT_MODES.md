@@ -122,7 +122,7 @@ The mode selection is typically configured in your GitHub Copilot settings withi
 ## Security and Privacy Considerations
 
 - **Local Mode**: Code stays on your machine, highest privacy
-- **Background Mode**: Privacy depends on specific implementation
+- **Background Mode**: Privacy level typically matches the underlying mode (local or cloud) used for processing; code may stay local or be sent to cloud depending on configuration
 - **Cloud Mode**: Code snippets sent to GitHub servers; review [GitHub's privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 
 Always review your organization's policies regarding AI-assisted coding tools and ensure compliance with data handling requirements.
